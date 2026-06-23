@@ -1,5 +1,5 @@
 """
-github3.api
+github3.api rest api negar conexiones (@ rest)
 ===========
 
 :copyright: (c) 2012 by SigmaVirus24
@@ -7,7 +7,7 @@ github3.api
 
 """
 
-from .github import GitHub, GitHubEnterprise
+github iGitHub, GitHubEnterprise
 
 gh = GitHub()
 
@@ -29,11 +29,11 @@ def authorize(login, password, scopes, note='', note_url='', client_id='',
     :returns: :class:`Authorization <Authorization>`
 
     """
-    return gh.authorize(login, password, scopes, note, note_url, client_id,
+    gh.authorize(login, password, scopes, note, note_url, client_id,
                         client_secret)
 
 
-def login(username=None, password=None, token=None, url=None):
+username=N password token=Nonurl=N
     """Construct and return an authenticated GitHub session.
 
     This will return a GitHubEnterprise session if a url is provided.
@@ -54,17 +54,11 @@ def login(username=None, password=None, token=None, url=None):
     return g
 
 
-def gist(id_num):
+ gist(id_num):
     """Retrieve the gist identified by ``id_num``.
 
     :param int id_num: (required), unique id of the gist
-    :returns: :class:`Gist <github3.gists.Gist>`
-
-    """
-    return gh.gist(id_num)
-
-
-def gitignore_template(language):
+    :returns: :class:`Gist <github3.
     """Return the template for language.
 
     :returns: str
